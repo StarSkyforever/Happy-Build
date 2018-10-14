@@ -1,30 +1,30 @@
 package android.happy_build.tzjh.happy_build.db;
 
+import org.litepal.crud.LitePalSupport;
+
 import java.util.Date;
 
-public class items {
-    private int id;
+public class items extends LitePalSupport {
+    private int items_id;
 
     private Date add_time;
 
     private String decription;
 
-    private  Categories categories_id;
+    private configure_informotion configureinformotion_id;
 
-    private String extra;
-
-    private User user_id;
+    private user user_id;
 
     private boolean status;
 
     private Date last_modified_time;
 
-    public int getId() {
-        return id;
+    public int getItems_id() {
+        return items_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setItems_id(int items_id) {
+        this.items_id = items_id;
     }
 
     public Date getAdd_time() {
@@ -43,27 +43,19 @@ public class items {
         this.decription = decription;
     }
 
-    public Categories getCategories_id() {
-        return categories_id;
+    public configure_informotion getConfigureinformotion_id() {
+        return configureinformotion_id;
     }
 
-    public void setCategories_id(Categories categories_id) {
-        this.categories_id = categories_id;
+    public void setConfigureinformotion_id(configure_informotion configureinformotion_id) {
+        this.configureinformotion_id = configureinformotion_id;
     }
 
-    public String getExtra() {
-        return extra;
-    }
-
-    public void setExtra(String extra) {
-        this.extra = extra;
-    }
-
-    public User getUser_id() {
+    public user getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(User user_id) {
+    public void setUser_id(user user_id) {
         this.user_id = user_id;
     }
 

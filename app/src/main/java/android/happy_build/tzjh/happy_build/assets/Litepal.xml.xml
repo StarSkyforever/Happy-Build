@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dbname value="happy_bulid"></dbname>
-    <version value="1"></version>
+    <version value="3"></version>
     <list>
         <mapping class="android.happy_build.tzjh.happy_build.db.admin"></mapping>
-        <mapping class="android.happy_build.tzjh.happy_build.db.Categories"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.configure_informotion"></mapping>
         <mapping class="android.happy_build.tzjh.happy_build.db.items"></mapping>
-        <mapping class="android.happy_build.tzjh.happy_build.db.User"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.user"></mapping>
         <mapping class="android.happy_build.tzjh.happy_build.db.record"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_case"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_cooler"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_cpu"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_graphic_card"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_hard_disk"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_motherboard"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_power"></mapping>
+        <mapping class="android.happy_build.tzjh.happy_build.db.t_ram"></mapping>
     </list>
 </resources>

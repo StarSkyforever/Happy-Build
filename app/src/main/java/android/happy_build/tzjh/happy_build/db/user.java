@@ -1,8 +1,10 @@
 package android.happy_build.tzjh.happy_build.db;
 
+import org.litepal.crud.LitePalSupport;
+
 import java.util.Date;
 
-public class User {
+public class user extends LitePalSupport {
     private int user_id;
 
     private String user_name;
@@ -15,7 +17,7 @@ public class User {
 
     private String email;
 
-    private String contact;
+    private String phone;
 
     private String[] favorite;
 
@@ -77,11 +79,11 @@ public class User {
     }
 
 
-    public String getContact() {
-        return contact;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setContact(String contact) {
-        this.contact = contact;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

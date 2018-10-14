@@ -1,13 +1,20 @@
 package android.happy_build.tzjh.happy_build.db;
 
-public class record {
+import org.litepal.crud.LitePalSupport;
+
+import java.util.Date;
+
+public class record extends LitePalSupport {
     private int id;
+
+    private admin admin_id;
+
+    private user user_id;
 
     private String extra;
 
     private String occur_time;
 
-    private items items_id;
 
     public int getId() {
         return id;
@@ -33,11 +40,5 @@ public class record {
         this.occur_time = occur_time;
     }
 
-    public items getItems_id() {
-        return items_id;
-    }
 
-    public void setItems_id(items items_id) {
-        this.items_id = items_id;
-    }
 }

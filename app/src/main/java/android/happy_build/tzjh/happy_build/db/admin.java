@@ -1,7 +1,10 @@
 package android.happy_build.tzjh.happy_build.db;
+import org.litepal.crud.LitePalSupport;
+
 import java.util.Date;
-public class admin {
-    private int id;
+
+public class admin extends LitePalSupport {
+    private int admin_id;
 
     private String account_name;
 
@@ -11,16 +14,14 @@ public class admin {
 
     private Date last_login_time;
 
-    private String name;
-
     private String extra;
 
-    public int getId() {
-        return id;
+    public int getAdmin_id() {
+        return admin_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAdmin_id(int admin_id) {
+        this.admin_id = admin_id;
     }
 
     public String getAccount_name() {
@@ -53,14 +54,6 @@ public class admin {
 
     public void setLast_login_time(Date last_login_time) {
         this.last_login_time = last_login_time;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getExtra() {
